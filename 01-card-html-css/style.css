@@ -1,0 +1,58 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    background: #FFF;
+    box-shadow: 0px 2px 23px #26395338;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.topCard {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.mediaCard {
+    /* A imagem fica sempre no meio e preenche toda largura e altura da div */
+    background: url("https://m.media-amazon.com/images/M/MV5BMjM3NTc5ODQyN15BMl5BanBnXkFtZTgwNzE1MDMzNTE@._V1_.jpg") center / cover;
+    height: 300px;
+    width: 100%;
+}
+
+.title {
+    color: #2b3d59;
+}
+
+.secondText {
+    color: #828fa1;
+}
+
+.bottomText {
+    color: #445b73;
+}
+
+.bottomCard {
+    padding: 20px;
+}
+
+.actions {
+    background: none;
+    border: none;
+    color: purple;
+}
+
