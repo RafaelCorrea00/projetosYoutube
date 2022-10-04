@@ -4,6 +4,6 @@
 
 * Landing Page simples e rápida de fazer com HTML e CSS
 
-** Balle Bot - um robô que modera comunidade no Discord
+* Balle Bot - um robô que modera comunidade no Discord
 
 [link da comunidade](https://discord.gg/wagxzStdcR)
