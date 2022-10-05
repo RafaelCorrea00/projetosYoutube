@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d; /* importante para o flip */
+    transition: all .5s;
+}
+
+.face {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#front {
+    background-color: rgb(0, 135, 212);
+    transform: rotateY(180deg);
+
+}
+
+#back {
+    background-color: rgb(0, 56, 88);
+    backface-visibility: hidden; /* importante para o flip */
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
