@@ -1,0 +1,64 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: rgb(36, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #820AD1;
+    padding: 1em;
+    border-radius: 10px;
+    width: 15em;
+    height: 25em;
+    box-shadow: 5px 8px 8px #000;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    height: 70%;
+}
+
+.box-img {
+    display: flex;
+    align-items: flex-start;
+}
+
+img[alt=mastercard] {
+    width: 30%;
+}
+
+img[alt=chip] {
+    width: 40%;
+    transform: rotate(90deg);
+}
+
+.footer {
+    height: 30%;
+}
+
+.footer p {
+    margin-left: 1em;
+}
+
+.footer img {
+    width: 35%;
+}
+
+
+
+
+
