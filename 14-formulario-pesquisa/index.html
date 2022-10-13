@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Formulário de Pesquisa da Código Livre</h1>
+        <p><em>Obrigado por disponibilizar seu tempo para nos ajudar a melhorar nossa plataforma</em></p>
+    </header>
+
+    <!-- Conteúdo Principal/Formulário -->
+    <main>
+        <section class="container">
+            <form action="">
+
+                <!-- Nome -->
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite seu Nome">
+
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email">
+
+                <!-- Idade -->
+                <label for="age">Idade (opcional)</label>
+                <input type="number" name="age" id="age" min="10" max="99" placeholder="Idade">
+
+                <!-- Trabalho/Estudo -->
+                <p>Qual opção melhor descreve você atualmente?</p>
+                <select name="work" id="work">
+                    <option disabled selected>Selecione uma opção</option>
+                    <option value="student">Estudante</option>
+                    <option value="part-time-job">Trabalho de meio período</option>
+                    <option value="full-time-job">Trabalho em tempo integral</option>
+                    <option value="prefer-not-to-say">Prefiro não dizer</option>
+                    <option value="other">Outra</option>
+                </select>
+
+                <!-- Recomendaria a Empresa? -->
+                <p>Você recomendaria a Código Livre para um amigo?</p>
+                <fieldset>
+                    <input type="radio" name="recommend" id="definitely" checked>
+                    <label for="definitely">Com certeza</label>
+                </fieldset>
+                <fieldset>
+                    <input type="radio" name="recommend" id="maybe">
+                    <label for="maybe">Talvez</label>
+                </fieldset>
+                <fieldset>
+                    <input type="radio" name="recommend" id="not-sure">
+                    <label for="not-sure">Não</label>
+                </fieldset>
+
+                <!-- O que mais gostou da empresa? -->
+                <p>O que você mais gostou da Código Livre?</p>
+                <select name="feature" id="feature">
+                    <option disabled selected>Selecione uma opção</option>
+                    <option value="chalenges">Desafios</option>
+                    <option value="projects">Projetos</option>
+                    <option value="community">Comunidade</option>
+                    <option value="open-source">Códigos abertos</option>
+                </select>
+
+                <!-- Melhorias/Sugestões -->
+                <p>O que você quer que melhore? (marque tudo que preferir)</p>
+                <fieldset>
+                    <input type="checkbox" name="front-end-projects" id="front-end-projects">
+                    <label for="front-end-projects">Projetos Front-end</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="back-end-projects" id="back-end-projects">
+                    <label for="back-end-projects">Projetos Back-end</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="data-visualization" id="data-visualization">
+                    <label for="data-visualization">Visualização de Dados</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="challenges" id="challenges">
+                    <label for="challenges">Desafios</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="open-source-community" id="open-source-community">
+                    <label for="open-source-community">Comunidade Código Aberto</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="gitter-help-rooms" id="gitter-help-rooms">
+                    <label for="gitter-help-rooms">Salas de tira-dúvidas</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="videos" id="videos">
+                    <label for="videos">Vídeos</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="city-meetups" id="city-meetups">
+                    <label for="city-meetups">Encontros Presenciais</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="blog" id="blog">
+                    <label for="blog">Blog</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="forum" id="forum">
+                    <label for="forum">Fórum</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="addicional-courses" id="addicional-courses">
+                    <label for="addicional-courses">Cursos Extras</label>
+                </fieldset>
+
+                <p>Algum comentário ou sugestão?</p>
+                <textarea name="comments-suggestions" id="comments-suggestions" placeholder="Insira seu comentário aqui..."></textarea>
+
+                <!-- Enviar -->
+                <input id="submit" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <h3><em><a href="https://github.com/RafaelCorrea00" target="_blank">@mundus_tech</a></em></h3>
+    </footer>
+</body>
+</html>

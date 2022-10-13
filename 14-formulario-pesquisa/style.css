@@ -1,0 +1,158 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:
+        linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+        url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header>h1 {
+    margin: 3.125rem auto 0.5rem auto;
+    text-align: center;
+    color: #F3F3F3;
+}
+
+header>p {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    color: #F3F3F3;
+}
+
+.container {
+    width: 720px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 1.5rem auto 0 auto;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1B1B32CC;
+    color: #F3F3F3;
+    padding: 40px;
+}
+
+.container fieldset {
+    border: none;
+}
+
+.container input#name,
+input#email,
+input#age {
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    border: 1ps solid #ced4da;
+    border-radius: 0.25rem;
+    margin: 6px 0 20px 0;
+    font-size: inherit;
+    color: #495057;
+}
+
+.container p {
+    margin: 20px 0 0 0;
+}
+
+.container select#work,
+select#feature {
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    border: 1ps solid #ced4da;
+    border-radius: 0.25rem;
+    margin: 8px 0 20px 0;
+    font-size: inherit;
+    color: #495057;
+}
+
+.container input[type='radio'] {
+    margin: 10px 0 10px 0;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+
+.container input[type='checkbox'] {
+    margin: 10px 0 10px 0;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+
+.container textarea#comments-suggestions {
+    width: 100%;
+    max-width: 640px;
+    height: 120px;
+    min-height: 120px;
+    border: 1ps solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.625rem;
+    margin: 8px 0 8px;
+    font-size: inherit;
+    color: #495057;
+}
+
+.container a {
+    width: 100%;
+}
+
+.container input[type='submit'] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 25px 0 25px 0;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #37AF75;
+    color: #F3F3F3;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.container input[type='submit']:hover {
+    background-color: #2C8148;
+}
+
+footer>h3,
+a {
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    margin: 25px 0 25px 0;
+    color: #F3F3F3;
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 480px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 490px) {
+    .container {
+        width: 100%;
+    }
+
+    .container p {
+        margin-bottom: 15px;
+    }
+}
