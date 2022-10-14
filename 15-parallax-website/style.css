@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --black: #292B2C;
+    --white: #F7F7F7;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/san-francisco01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-container h1{
+    background-color: var(--black);
+    color: #F7F7F7;
+    padding: 10px;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+}
+
+.sec-one {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25rem;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 40px 0;
+}
+
+.sec-one h3 {
+    margin-bottom: 20px;
+}
+
+.sec-one p {
+    line-height: 25px;
+    margin: 0 5px;
+}
+
+.sec-two-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-image: url('./images/san-francisco02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec-two-header h2 {
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+.sec-two-body {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 0;
+}
+
+.sec-two-body h3 {
+    margin-bottom: 20px;
+}
+
+.sec-two-body p {
+    line-height: 25px;
+    margin-inline-end: 0 5px;
+}
+
+.sec-three-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-image: url('./images/san-francisco03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec-three-header h2 {
+    padding: 5px;
+    color: var(--white);
+    background-color: #292b2c71;
+    text-shadow: 1px 1px 3px var(--black);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+.sec-three-body {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 0;
+}
+
+.sec-three-body h3 {
+    margin-bottom: 20px;
+}
+
+.sec-three-body p {
+    line-height: 25px;
+    margin-inline-end: 0 5px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/san-francisco04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-container a {
+    text-decoration: none;
+    background-color: var(--black);
+    color: #F7F7F7;
+    padding: 10px;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+}
