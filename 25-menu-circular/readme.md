@@ -1,7 +1,7 @@
 # Menu Circular | Radial Navigation Toggle Menu
 
 - Menu circular que abre e fecha
-- Itens: home, time, heart, search, telephone e vidocam
+- Itens: home, time, heart, search, telephone e videocam
 
 - Desenvolvido com HTML, CSS e JavaScript
 
