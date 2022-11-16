@@ -1,6 +1,6 @@
 # Calculadora Simples com HTML, CSS e JavaScript
 
-- Desenvlvido com HTML, CSS e JavaScript
+- Desenvolvido com HTML, CSS e JavaScript
 
 ## Principais conteúdos aprendidos
 
