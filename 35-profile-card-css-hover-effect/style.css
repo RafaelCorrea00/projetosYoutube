@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #CCC;
+
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 40px;
+}
+
+
+img {
+    --g: #0000, #000 .5deg 91deg, #0000 91deg;
+    --m:
+        conic-gradient(from 45deg, var(--g)) 15px 0 no-repeat,
+        conic-gradient(from 135deg, var(--g)) 0 15px no-repeat,
+        conic-gradient(from 225deg, var(--g)) -15px 0 no-repeat,
+        conic-gradient(from 315deg, var(--g)) 0 -15px no-repeat;
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    transition: 0.3s linear;
+    filter: grayscale(0.9);
+    opacity: 0.9;
+    cursor: pointer;
+
+
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+img:hover {
+    -webkit-mask-position: 0;
+    mask-position: 0;
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.05);
+}
