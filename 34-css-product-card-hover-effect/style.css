@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 40px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+    --g: no-repeat linear-gradient(#000 0 0);
+    --s: 10% /45% 45%;
+    --m:
+        var(--g)left var(--i,0%) top var(--s),
+        var(--g)bottom var(--i,0%) left var(--s),
+        var(--g)top var(--i,0%) right var(--s),
+        var(--g)right var(--i,0%) bottom var(--s);
+    
+    -webkit-mask: var(--m);
+            mask: var(--m);
+
+    filter: grayscale();
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+img:hover {
+    --i: 10%;
+    filter: grayscale(0);
+}
