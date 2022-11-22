@@ -1,0 +1,37 @@
+.cube-wrapper {
+    width: 250px;
+    height: 250px;
+    box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.cube, .cube div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cube-front {
+    background: url('./images/css-icon01.svg') #FFFFFF no-repeat center;
+    background-size: 100%;
+}
+.cube-top {
+    background: url('./images/css-icon02.svg') #CCFFFF no-repeat center;
+    background-size: 100%;
+
+    transform: translate(0, -100%) rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.cube-wrapper:hover .cube {
+    transform: translate(0, 50%) rotateX(-90deg);
+}
+
