@@ -1,0 +1,91 @@
+:root {
+    --theme-1: #AE5EF2;
+    --theme-2: #2F8FCF;
+    --theme-3: #2FCF51;
+    --theme-4: #F2E75E;
+    --theme-5: #E95181;
+    --theme-6: #FF8249;
+    --theme-7: #5EF29C;
+    --theme-8: #747DFF;
+    --theme-9: #E95181;
+    --theme-10: #A98EBF;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-1);
+    transition: background-color 1s;
+}
+
+.tab-bar {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 15px;
+    position: relative;
+    gap: 25px;
+    box-shadow: 0 10px 40px -20px #00000091;
+}
+
+.tab-bar__circle-indicator {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--theme-1);
+    z-index: 0;
+    transition: all 0.3s;
+    opacity: 0.7;
+    animation: circleIndicatorAnimate 2s infinite;
+}
+
+.tab-bar__item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.tab-bar-vertical {
+    flex-direction: column;
+}
+
+.tab-bar__line-indicator {
+    background-color: var(--theme-6);
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    left: 2px;
+    transition: all 0.3s cubic-bezier(0.25, 0.25, 0.25, 1.50);
+}
+
+@keyframes circleIndicatorAnimate {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
