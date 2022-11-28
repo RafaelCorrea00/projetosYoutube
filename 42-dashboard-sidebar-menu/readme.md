@@ -6,7 +6,7 @@
 
 
 ## ícones do ionic.io
-[ionic.io](https://ionic.io/)
+[ionic.io](https://ionic.io/ionicons)
 
 - Menu com ícones: logo-apple, home, person, chatbubble, help, settings, lock-closed, log-out
 
