@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    scroll-behavior: smooth; /* !important */
+}
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+    ), url('./assets/images/island03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    position: fixed;
+}
+
+.loader {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: transparent;
+    border-top: 2.2px solid #FFF;
+    border-left: 2.2px solid #FFF;
+    border-bottom: none;
+    border-right: none;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#scrollTop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transform: translate(90vw, 90vh);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.5s;
+    z-index: 1000;
+    opacity: 0;
+}
+
+#scrollTop ion-icon {
+    background: #FFF;
+    color: #010050;
+    transition: all 0.5s;
+}
+
+#scrollTop ion-icon:hover {
+    border: 0.085em solid #0275D8;
+    background: #0275D8;
+    color: #FFF;
+}
+
+.mainHeader {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+    ), url('./assets/images/island03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 2% 3%;
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.6em 0.8em;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+}
+
+nav ul li h2 {
+    font-size: 1.4em;
+    transition: all 0.5s;
+}
+
+nav ul li h2:hover {
+    font-weight: 300;
+}
+
+.pages {
+    padding-bottom: -0.8em;
+    bottom: -0.3em;
+}
+
+.pages::after {
+    content: '';
+    width: 0%;
+    height: 0.15em;
+    background: #96C845;
+    display: flex;
+    margin: auto;
+    transition: all 0.5s cubic-bezier(0.2, 0.9, 0.4, 1);
+}
+
+.pages:hover::after {
+    width: 100%;
+}
+
+.change-header {
+    background: linear-gradient(
+        to bottom,
+        rgb(10, 135, 87),
+        rgb(10, 135, 87),
+        rgba(10, 135, 87, 0.95)
+    );
+    color: #FFF;
+    padding: 0 0 0 40px;
+    box-shadow: 0 10px 30px rgba(10, 135, 87, 0.95);
+    transition: all 0.5s ease-in-out;
+}
+
+.header {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2 {
+    padding: 6em 1em 0.5em 1em;
+    text-align: center;
+    position: relative;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.header p {
+    padding: 0.2em 1em 0.5em 1em;
+    text-align: center;
+    position: relative;
+    margin: 1vw;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+button {
+    padding: 0.8em 1.2em;
+    margin: 1em;
+    text-align: center;
+    color: #010050;
+    background: transparent;
+    border: 1px solid #010050;
+    outline: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.5s;
+}
+
+button:hover{
+    background: #010050;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.textSection {
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.textSection h2 {
+    padding: 0;
+    margin-top: 3em;
+    text-align: center;
+    position: relative;
+    font-size: 2.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.textSection p {
+    width: 25em;
+    padding: 1em;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    font-size: 1.5em;
+}
+
+.textSection button {
+    margin: 1em;
+    padding: 1em;
+    font-size: 1em;
+    position: relative;
+    top: 0;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    border: 1px solid #010050;
+}
+
+#about {
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7em;
+}
+
+#about .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+#about h2 {
+    padding: 0.5em 0;
+}
+
+#about p {
+    text-align: left;
+    padding: 2em 0;
+}
+
+#about button {
+    position: relative;
+    left: 0;
+    transform: translate(-10%, -25%);
+}
+
+#about img {
+    border-radius: 0;
+    padding: 1.2em;
+    margin-left: 2.2em;
+    transition: all 0.5s;
+}
+
+#about img:hover {
+    scale: 1.2;
+}
+
+.content-images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#island01 {
+    width: 17em;
+    z-index: 2;
+}
+
+#island02 {
+    width: 14em;
+    z-index: 1;
+    left: 65%;
+    position: absolute;
+}
+
+#explore {
+    min-height: 75vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 300px;
+    border-radius: 0;
+    box-shadow: 0 5px 10px #333;
+    transition: all 0.5s;
+}
+
+.swiper-slide img:hover {
+    scale: 1.2
+}
+
+.swiper-slide p {
+    width: 12em;
+    position: absolute;
+    top: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7em;
+}
+
+#tour .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+#tour h2 {
+    padding: 0.5em 0;
+}
+
+#tour p {
+    padding: 2em 0;
+    width: 20em;
+    text-align: left;
+}
+
+#tour video {
+    width: 25em;
+    padding-left: 5em;
+}
+
+#playpause {
+    width: 4em;
+    height: 4em;
+    background: transparent;
+    position: relative;
+    transform: translate(-12.5em, 8em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-icon {
+    font-size: 1.5em;
+    color: #010050;
+    border: 0.085em solid #010050;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.3em;
+}
+
+ion-icon:hover {
+    color: #FFF;
+    background: #010050;
+}
+
+#playpause ion-icon {
+    color: #120C42;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+#playpause ion-icon:hover {
+    color: #FFF;
+}
+
+#playpause ion-icon[name='pause-outline'] {
+    visibility: hidden;
+}
+
+#islands {
+    width: 100%;
+    min-height: 140vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.islandsChoice {
+    width: 100px;
+    height: 100px;
+    background: #FFF;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, max-content);
+    position: relative;
+}
+
+.islandImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 15em;
+    margin: 2em;
+    background: #000;
+    overflow: hidden;
+    box-shadow: 6px 6px 8px #90D7AC;
+    transition: all 0.5s;
+}
+
+.islandImg:hover {
+    transform: translateY(-1em);
+    box-shadow: 12px 12px 8px #90D7AC;
+}
+
+.islandImg img {
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 0;
+}
+
+.islandImg p {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    bottom: 6em;
+    transform: translate(0, 6em);
+    color: #FFF;
+    font-size: 0.8em;
+    cursor: default;
+    z-index: 10;
+}
+
+#flexShrink {
+    object-fit: cover;
+    /* flex-shrink: 0; */
+}
+
+#booking {
+    height: 70vh;
+}
+
+#booking p {
+    margin-bottom: 2em;
+}
+
+.footer {
+    background: #010050;
+    color: #FFF;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.footer h2 {
+    color: #FFF;
+    align-self: flex-start;
+}
+
+.links-section {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2em 4em;
+}
+
+.links-section h3 {
+    color: #FFF;
+}
+
+.links-section ul {
+    display: inline-block;
+    gap: 2em 3em;
+}
+
+.links-section ul li {
+    list-style: none;
+    font-size: 1em;
+}
+
+.links-section ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.links-section ul li:hover a {
+    color: #FFAE77;
+}
+
+/* Responsividade */ /* !muitos remendos */
+@media (max-width: 1170px) {
+    #about {
+        flex-direction: column;
+        padding-bottom: 50em;
+    }
+}
+
+@media (max-width: 1000px) {
+    #tour {
+        flex-direction: column;
+        padding: 0 0 50em 0;
+    }
+
+    #tour video {
+        padding: 0;
+    }
+
+    #playpause{
+        transform: translate(0, 2.5em);
+    }
+}
+
+@media (max-width: 830px) {
+    nav {
+        display: none;
+    }
+
+    :root h2 {
+        font-size: 1.5em;
+    }
+
+    :root p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 610px) {
+    .content-images {
+        width: 100%;
+    }
+
+    /* #island01{
+        width: 90vw;
+    } */
+
+    #island02{
+        display: none;
+    }
+
+    #tour video {
+        width: 100%;
+    }
+
+    #islands {
+        padding-bottom: 50em;
+    }
+
+    .islandsChoice{
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer h2{
+        align-self: center;
+    }
+}

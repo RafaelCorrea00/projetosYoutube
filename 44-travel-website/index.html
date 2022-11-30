@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Swiper JS -->
+    <!-- https://swiperjs.com/get-started -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- ionic -->
+    <!-- https://ionic.io/ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+
+    <div id="scrollTop" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </div>
+
+    <div class="mainHeader">
+        <nav id="header">
+            <ul>
+                <li><h2 onclick="scrollToTop()">Travel</h2></li>
+                <li class="pages" onclick="scrollToAbout()">Sobre</li>
+                <li class="pages" onclick="scrollToExplore()">Explore</li>
+                <li class="pages" onclick="scrollToTour()">Tour</li>
+                <li class="pages" onclick="scrollToIslands()">Ilhas</li>
+                <li class="pages" onclick="scrollToBooking()">Reservas</li>
+            </ul>
+        </nav>
+        <div class="header">
+            <h2>Explore o mundo <br> com TRAVEL</h2>
+            <p>Reserve viagens para embarcar numa volta ao mundo <br> e curtir suas férias!</p>
+            <button onclick="scrollToAbout()">Saiba mais</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="textSection" id="about">
+        <div class="content">
+            <h2>Sobre as Ilhas</h2>
+            <p>Explore e reserve sua viagem para ilhas maravilhosas! Aproveite as paisagens dos oceanos e faça passeios para mais diversão!</p>
+            <button onclick="scrollToBooking()">Reserve agora!</button>
+        </div>
+        <div class="content-images">
+            <img id="island01" src="./assets/images/island01.jpg">
+            <img id="island02" src="./assets/images/island04-jezerane-croatia.jpg">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="textSection" id="explore">
+        <h2>Explore</h2>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./assets/images/island05-sukakarya-aceh-indonesia.jpg">
+                    <p>Sukakarya Aceh, Indonésia</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/island06-daerah-khusus-ibukota-jakarta-indonesia.jpg">
+                    <p>Daerah Khusus Ibukpta Jakarta, Indonésia</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/island02.jpg">
+                    <p>Island Reef</p>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="textSection" id="tour">
+        <div class="content">
+            <h2>Passeios Fantásticos</h2>
+            <p>Oferecemos visitas guiadas por várias ilhas. Você aprenderá coisas magníficas sobre as ilhas com nossos experientes guias turísticos.</p>
+        </div>
+        <video src="./assets/videos/boat-view.mp4" muted loop></video>
+        <span id="playpause">
+            <ion-icon name="play-outline" id="playbtn"></ion-icon>
+            <ion-icon name="pause-outline" id="pausebtn"></ion-icon>
+        </span>
+    </div>
+
+    <hr>
+
+    <div class="textSection" id="islands">
+        <h2>Ilhas</h2>
+        <p>Escolha sua ilha favorita para uma viagem incrível!</p>
+        <div class="islandsChoice">
+            <div class="islandImg">
+                <img src="./assets/images/island07-grainau-germany.jpg">
+                <p>Grainau, Alemanha <br> Florestas</p>
+            </div>
+            <div class="islandImg">
+                <img src="./assets/images/island08-snow.jpg">
+                <p>Ilha Nevada <br> Clima Frio</p>
+            </div>
+            <div class="islandImg">
+                <img src="./assets/images/island12-river.jpg">
+                <p>Rios na Primavera <br> Natureza Belíssima</p>
+            </div>
+            <div class="islandImg">
+                <img src="./assets/images/island09-banten-indonesia.jpg" id="flexShrink">
+                <p>Banten, Indonésia <br> Lindas Montanhas</p>
+            </div>
+            <div class="islandImg">
+                <img src="./assets/images/island10.jpg">
+                <p>Pôr do Sol <br> Maravilhoso</p>
+            </div>
+            <div class="islandImg">
+                <img src="./assets/images/island13-martinique.jpg">
+                <p>Martinica, Caribe <br> Praias Relaxantes</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="textSection" id="booking">
+        <h2>Reservas</h2>
+        <p>Reserve <a href="#">aqui</a> suas viagens!</p>
+    </div>
+
+    <hr>
+
+    <div class="textSection footer">
+        <h2>TRAVEL</h2>
+        <div class="links-section">
+            <ul>
+                <h3>Companhia</h3>
+                <li><a href="#">Nossa Equipe</a></li>
+                <li><a href="#">Nossas Viagens</a></li>
+                <li><a href="#">Nossos Serviços</a></li>
+            </ul>
+            <ul>
+                <h3>Apoio</h3>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Doações</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
