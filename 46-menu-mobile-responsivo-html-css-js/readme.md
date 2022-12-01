@@ -1,13 +1,13 @@
 # 3 Formas de Fazer Menu Mobile Responsivo
 
-1° checkbox
-    - Usando input checkbox e trabalhando pseudo-classe checked no CSS
-    
-    - Vantagens:
-        - É um pouco mais simples, pois trabalha apenas HTML e CSS
-        - Funciona no mobile e no desktop
-    - Desvantagens:
-        - Gambiarra, não é muito profissional embora funcione
+## 1° checkbox
+- Usando input checkbox e trabalhando pseudo-classe checked no CSS
+
+- Vantagens:
+    - É um pouco mais simples, pois trabalha apenas HTML e CSS
+    - Funciona no mobile e no desktop
+- Desvantagens:
+    - Gambiarra, não é muito profissional embora funcione
     
 ```css
     .label-menu, .checkbox {
@@ -84,14 +84,14 @@
     }
 ```
 
-2° focus-within
-    - Usando button e trabalhando pseudo-classe focus-within no CSS
-    
-    - Vantagens:
-        - É um pouco mais simples, pois trabalha apenas HTML e CSS
-    - Desvantagens:
-        - Nao funciona no mobile, apenas no desktop
-        - Gambiarra, não é muito profissional embora funcione no desktop
+## 2° focus-within
+- Usando button e trabalhando pseudo-classe focus-within no CSS
+
+- Vantagens:
+    - É um pouco mais simples, pois trabalha apenas HTML e CSS
+- Desvantagens:
+    - Nao funciona no mobile, apenas no desktop
+    - Gambiarra, não é muito profissional embora funcione no desktop
     
 ```css
     .btn-menu {
@@ -171,14 +171,14 @@
 }
 ```
 
-3° javascript
-    - Usando button e trabalhando a classe active dinamicamente no JavaScript
+## 3° javascript
+- Usando button e trabalhando a classe active dinamicamente no JavaScript
 
-    - Vantagens:
-        - Funciona bem no mobile e no desktop com eventos de click e touch
-        - Permite maior acessibilidade alterando o aria-label do HTML de 'Menu Fechado' para 'Menu Aberto'
-    - Desvantagens:
-        - É um pouquinho mais complexo e trabalhoso para desenvolver (mas vale o esforço)
+- Vantagens:
+    - Funciona bem no mobile e no desktop com eventos de click e touch
+    - Permite maior acessibilidade alterando o aria-label do HTML de 'Menu Fechado' para 'Menu Aberto'
+- Desvantagens:
+    - É um pouquinho mais complexo e trabalhoso para desenvolver (mas vale o esforço)
 
 ```js
 const nav = document.querySelector('.nav')
@@ -232,3 +232,6 @@ function setAria() {
 btnMenu.addEventListener('click', handleButtonClick)
 btnMenu.addEventListener('touchstart', handleButtonClick)
 ```
+___
+
+[Tiger Codes](https://www.youtube.com/watch?v=5iGoLFkIVl4&list=PLn-1oXF21q6IwN9F3qZF9-2yEpkAtjU9w&index=2)
