@@ -1,6 +1,6 @@
 # Travel Website
 
-- One Single Page Application
+- Landing Page para sites de viagens
 - Scroll suave para cada seção da página
 - Desenvolvido com HTML, CSS, JavaScript e SwiperJS
 
