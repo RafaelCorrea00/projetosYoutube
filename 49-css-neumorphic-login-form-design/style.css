@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: #ECF0F3;
+}
+
+.login-div {
+    width: 430px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ECF0F3;
+    box-shadow: 13px 13px 20px #CBCED1,
+                -13px -13px 20px #FFFFFF;
+}
+
+.logo {
+    background: url('./logo.png');
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 
+    /* logo shadow */
+    0px 0px 2px #5F5F5F,
+    /* offset */
+    0px 0px 0px 5px #ECF0F3,
+    /* bottom right */
+    8px 8px 15px #A7AAAF,
+    /* top left */
+    -8px -8px 15px #FFFFFF;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+
+.fields {
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+}
+
+.fields input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+
+.email, .password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #CBCED1,
+                inset -8px -8px 8px #FFFFFF;
+}
+
+.fields svg {
+    height: 22px;
+    margin: 0 10px 0 25px;
+}
+
+.signin-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #FFF;
+    background: #24CFAA;
+    box-shadow: 3px 3px 8px #B1B1B1,
+                -3px -3px 8px #FFFFFF;
+    transition: 0.5s;
+}
+
+.signin-button:hover {
+    background: #2FDBB6;
+}
+
+.signin-button:active {
+    background: #1DA88A;
+}
+
+.link {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #AAA;
+    font-size: 15px;
+}
