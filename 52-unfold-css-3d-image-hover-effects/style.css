@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2F364F;
+}
+
+.box  {
+    display: flex;
+    width: 540px;
+    height: 360px;
+    transform: rotate(-25deg) skew(25deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: rotate(-25deg) 
+               skew(-25deg)
+               translateY(-20px);
+}
+
+.box span {
+    width: 25%;
+    height: 100%;
+    background: url('map.jpg');
+    background-size: cover;
+    background-position: calc(-135px * var(--i));
+    display: block;
+    transition: 0.5s;
+}
+
+.box:hover span:nth-child(odd) {
+    transform: skewY(25deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover span:nth-child(even) {
+    transform: skewY(-25deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
