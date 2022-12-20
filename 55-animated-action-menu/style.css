@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #FF216D, #2196F3);
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuToggle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    border-radius: 70px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.menuToggle::before {
+    content: '+';
+    position: absolute;
+    font-size: 3em;
+    font-weight: 300;
+    color: #FF216D;
+    transition: 1.5s;
+}
+
+.menuToggle.active::before {
+    transform: rotate(225deg);
+}
+
+.menu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    border-radius: 70px;
+    z-index: -1;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    transition-delay: 1s, 0.5s, 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menuToggle.active ~ .menu{
+    width: 240px;
+    height: 70px;
+    z-index: 1;
+    transform: translateY(-100px);
+    transition-delay: 0s, 0.5s, 0.5s;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #FFF;
+    left: calc(50% - 8px);
+    bottom: 4px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.menuToggle.active ~ .menu::before {
+    transition-delay: 0.5s;
+    bottom: -6px;
+}
+
+.menu ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    gap: 40px;
+}
+
+.menu ul li {
+    list-style: none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+    transition: 0.25s;
+    transition-delay: calc(0s + var(--i));
+}
+
+.menuToggle.active ~ .menu ul li {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: calc(0.75s + var(--i));
+}
+
+.menu ul li a {
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    color: #555;
+    transition: 0.5s;
+}
+
+.menu ul li:hover a {
+    color: #FF216D;
+}
